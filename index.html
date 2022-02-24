@@ -2,8 +2,8 @@
 <html lang= "en">
     <head>
         <title>Kiley's Web Page</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-<body>
 
 <!--Beginning of website where I introduce myself a little bit-->
 <header>
@@ -12,7 +12,8 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="#">About</a>
+    <a href="tags.html">Tags</a>
+    <a href="nested.html">Nested</a>
     <a href="media.html">Media</a>
 </nav>
 
@@ -20,10 +21,10 @@
 <p><i>By Kiley Buehler</i></p>
 
 
-<section>
+<div class="intro">
     <h2>About Me</h2>
     <p>First I'll begin by introducing myself. My name is Kiley and I am a senior at Boise State University! I am studying Integrated Media and Strategic Communications and minoring in Computer Science. After graduation I plan to move to Minneapolis where I have an internship doing web design for <abbr title="Royal Bank of Canada">RBC</abbr>! I am extremeley excited for what the future holds for me!</p>
-</section>
+</div>
 
 <figure>
     <img src="boisestatelogo.jpg" width="300px" alt="Boise State">
@@ -31,7 +32,7 @@
 </figure>
 
 <!--Practicing different types of lists-->
-<section>
+<div class="list">
     <h2>A list of things I love:</h2>
     <u1>
         <li>My family</li>
@@ -49,7 +50,7 @@
 
 </figure>
 
-<section>
+<div id="list2">
     <h2>My favorite concerts I've been to:</h2>
     <ol>
         <li>Billie Eilish</li>
@@ -59,14 +60,18 @@
         <li>Louis the Child</li>
         <li>Young Gravy</li>
     </ol>
+</div>
     <p>The first three I saw when I went to Life Is Beautiful music festival in Las Vegas! It was so much fun!</p>
+<div class="list3">
     <d1>
         <dt><b>All of these concerts had some things in common:</b></dt>
-        <dd>Lots of people with <mark>high energy</mark></dd> <!--Testing the highligher feature-->
-        <dd><u>Amazing</u> music</dd> <!--Testing underline feature-->
+        <dd>Lots of people with <mark>high energy</mark></dd> Testing the highligher feature
+        <dd><u>Amazing</u> music</dd> Testing underline feature
+    
+    
         <dd>I went with my best friends so it made it so much fun</dd>
     </d1>
-</section>
+</div>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X-3A5V2A7Cw"></iframe>
 
@@ -78,6 +83,7 @@
     </audio>
 </p>
 </div>
+
 <footer>
     <p>©Kiley Buehler. All Rights Reserved.</p>
 </footer>
@@ -86,3 +92,85 @@
 </html>
 
 
+<!---
+    <style>
+        /*p {
+            color: rgb(245, 175, 245);
+        } */
+        /*This is CSS
+        body {
+            background: #ecaedf;
+        }
+        
+
+        div * {
+            background-color: #dbad57;
+        }
+        */
+
+       .example {
+            color: red;
+       }
+
+       .example2 {
+           background: green;
+       }
+
+       a {
+           color: black;
+       }
+
+       .container a {
+           color: green;
+       }
+
+       p {
+           font-size: 32px!important;
+       }
+
+       p {
+           font-size: 12px;
+       }
+
+       nav li a {
+           color: red;
+       }
+
+       nav a {
+           color: green;
+       }
+    </style>
+<body>
+
+<!--This is HTML-->
+<!--
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Media</a>
+    </nav>
+
+<header>
+    <h1 class="example">This is a heading.</h1>
+</header>
+
+<h3 class="example example2"> this is a second heading </h3>
+
+
+<section class="container">
+    <p>This is my first paragraph</p>
+    <a href="#">This is my first link</a>
+</section>
+
+<section>
+    <p>This is my second paragraph</p>
+    <a href="#">This is my second link</a>
+</section>
+
+<nav>
+    <li>
+        <p>This is my third paragraph</p>
+        <a href="#">This is the third link</a>
+    </li>
+</nav>
+-->

@@ -1,0 +1,41 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box {
+    background: lightgray;
+    width: 500px;
+    border: 15px solid yellowgreen;
+    padding: 50px;
+    margin: 50px;
+}
+
+div.position {
+    position: absolute;
+    left:200px;
+    right: 400px;
+    top: 700px;
+}
+
+div.sticky {
+    position: sticky;
+    padding: 3px;
+    background-color: greenyellow;
+    border: 1px solid gray;
+}
+
+/*
+div {
+    background:  red;
+}
+
+span {
+    background: greenyellow;
+}
+p {
+    background-color: yellowgreen;
+    color: beige;
+    margin: 40px 100px;
+}
+*/
