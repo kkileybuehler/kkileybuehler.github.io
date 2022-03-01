@@ -1,41 +1,98 @@
 
-body {
-    font-family: 'Times New Roman', Times, serif;
+h1 {
+    color: #f8a771;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation-name: title;
+    animation-duration: 4s;
 }
 
-.box {
-    background: lightgray;
-    width: 500px;
-    border: 15px solid yellowgreen;
-    padding: 50px;
-    margin: 50px;
-}
-
-div.position {
-    position: absolute;
-    left:200px;
-    right: 400px;
-    top: 700px;
-}
-
-div.sticky {
-    position: sticky;
+h2 {
+    color: #5F9EA0;
+    text-align: center;
+    border: 12px solid lightpink;
     padding: 3px;
-    background-color: greenyellow;
-    border: 1px solid gray;
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-/*
+h4 {
+    background-color: #8FBC8F;
+    color:	#F0F8FF;
+    position: absolute;
+}
+
 div {
-    background:  red;
+    text-align: center;
 }
 
-span {
-    background: greenyellow;
-}
 p {
-    background-color: yellowgreen;
-    color: beige;
-    margin: 40px 100px;
+    font-size: 16px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 20px;
 }
-*/
+
+.intro {
+    font-size: 17px;
+    background-color: rgb(143, 197, 184);
+    color:	#F0F8FF;
+}
+
+.image {
+    margin-top: auto;
+    margin-right: 35px;
+    margin-bottom: auto;
+    margin-left: 35px;
+}
+
+#logo {
+    margin-top: auto;
+    margin-right: 180px;
+    margin-bottom: auto;
+    margin-left: 180px;
+}
+
+#list {
+    border: 5px solid rgb(143, 197, 184);
+    margin: 8px 30px 10px 30px;
+    text-align: left;
+}
+
+a:hover {
+    color:lightpink;
+    font-size: 20px;
+    background-color: #F0F8FF;
+}
+
+.love li {
+    color:#eb8476
+}
+
+#list li {
+    color:hsl(271, 95%, 84%)
+}
+
+#footer p {
+    text-align: left;
+}
+
+@keyframes title {
+    from {color: #f8a771;}
+    to {color: lightpink;}
+}
+
+h1.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+h4.absolute {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+
